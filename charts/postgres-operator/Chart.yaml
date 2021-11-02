@@ -1,7 +1,7 @@
 apiVersion: v1
 name: postgres-operator
-version: 1.7.0-h6s.5
-appVersion: 1.7.0-h6s.5
+version: 1.7.0-h6s.6
+appVersion: 1.7.0-h6s.6
 home: https://github.com/hexa-solutions/postgres-operator
 description: Postgres Operator creates and manages PostgreSQL clusters running in Kubernetes
 keywords:

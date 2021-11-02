@@ -3,7 +3,7 @@ entries:
   postgres-operator:
   - apiVersion: v1
     appVersion: 1.7.0
-    created: "2021-10-28T18:51:23.4401327+02:00"
+    created: "2021-11-02T11:16:19.4008508+01:00"
     description: Postgres Operator creates and manages PostgreSQL clusters running
       in Kubernetes
     digest: c3e99fb94305f81484b8b1af18eefb78681f3b5d057d5ad10565e4afb7c65ffe
@@ -24,11 +24,11 @@ entries:
     - postgres-operator-1.7.0.tgz
     version: 1.7.0
   - apiVersion: v1
-    appVersion: 1.7.0-h6s.5
-    created: "2021-10-28T18:51:23.4381526+02:00"
+    appVersion: 1.7.0-h6s.6
+    created: "2021-11-02T11:16:19.399065+01:00"
     description: Postgres Operator creates and manages PostgreSQL clusters running
       in Kubernetes
-    digest: c8e5c292eb6c8a5b4805a66edda6b32de49a5db175e228bd639fffaa2cdb6a9b
+    digest: 1083deb93cd342c0843be91a9295ac13033450cc17aafe90c0785c452b7628c9
     home: https://github.com/hexa-solutions/postgres-operator
     keywords:
     - postgres
@@ -43,11 +43,11 @@ entries:
     sources:
     - https://github.com/hexa-solutions/postgres-operator
     urls:
-    - postgres-operator-1.7.0-h6s.5.tgz
-    version: 1.7.0-h6s.5
+    - postgres-operator-1.7.0-h6s.6.tgz
+    version: 1.7.0-h6s.6
   - apiVersion: v1
     appVersion: 1.6.3
-    created: "2021-10-28T18:51:23.4318721+02:00"
+    created: "2021-11-02T11:16:19.3973072+01:00"
     description: Postgres Operator creates and manages PostgreSQL clusters running
       in Kubernetes
     digest: ea08f991bf23c9ad114bca98ebcbe3e2fa15beab163061399394905eaee89b35
@@ -69,7 +69,7 @@ entries:
     version: 1.6.3
   - apiVersion: v1
     appVersion: 1.6.2
-    created: "2021-10-28T18:51:23.4299164+02:00"
+    created: "2021-11-02T11:16:19.3953684+01:00"
     description: Postgres Operator creates and manages PostgreSQL clusters running
       in Kubernetes
     digest: d886f8a0879ca07d1e5246ee7bc55710e1c872f3977280fe495db6fc2057a7f4
@@ -91,7 +91,7 @@ entries:
     version: 1.6.2
   - apiVersion: v1
     appVersion: 1.6.1
-    created: "2021-10-28T18:51:23.4263885+02:00"
+    created: "2021-11-02T11:16:19.3925973+01:00"
     description: Postgres Operator creates and manages PostgreSQL clusters running
       in Kubernetes
     digest: 4ba5972cd486dcaa2d11c5613a6f97f6b7b831822e610fe9e10a57ea1db23556
@@ -113,7 +113,7 @@ entries:
     version: 1.6.1
   - apiVersion: v1
     appVersion: 1.6.0
-    created: "2021-10-28T18:51:23.4243415+02:00"
+    created: "2021-11-02T11:16:19.390814+01:00"
     description: Postgres Operator creates and manages PostgreSQL clusters running
       in Kubernetes
     digest: f52149718ea364f46b4b9eec9a65f6253ad182bb78df541d14cd5277b9c8a8c3
@@ -135,7 +135,7 @@ entries:
     version: 1.6.0
   - apiVersion: v1
     appVersion: 1.5.0
-    created: "2021-10-28T18:51:23.4224133+02:00"
+    created: "2021-11-02T11:16:19.3880678+01:00"
     description: Postgres Operator creates and manages PostgreSQL clusters running
       in Kubernetes
     digest: 198351d5db52e65cdf383d6f3e1745d91ac1e2a01121f8476f8b1be728b09531
@@ -155,4 +155,4 @@ entries:
     urls:
     - postgres-operator-1.5.0.tgz
     version: 1.5.0
-generated: "2021-10-28T18:51:23.4203998+02:00"
+generated: "2021-11-02T11:16:19.3857943+01:00"
