@@ -27,6 +27,11 @@ pipelines with no access to Kubernetes API directly, promoting infrastructure as
 * Works well on Amazon AWS, Google Cloud, OpenShift and locally on Kind
 * Support for AWS EBS gp2 to gp3 migration, supporting iops and throughput configuration
 
+This fork contains the following **PR**:
+* [Add POD_NAME environment variable for the Spilo Pod](https://github.com/zalando/postgres-operator/pull/1666)
+* [Allow distinction between local and bootstrap PostgreSQL parameters](https://github.com/zalando/postgres-operator/pull/1667)
+* [Add valueFrom capability for PostgreSQL parameters](https://github.com/zalando/postgres-operator/pull/1672)
+
 ### PostgreSQL features
 
 * Supports PostgreSQL 14, starting from 9.6+
