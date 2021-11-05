@@ -1,8 +1,8 @@
 image:
   registry: hexasolutions
   repository: postgres-operator
-  tag: v1.7.0-h6s.6
-  pullPolicy: "IfNotPresent"
+  tag: v1.7.0-h6s.1
+  pullPolicy: "Always"
 
   # Optionally specify an array of imagePullSecrets.
   # Secrets must be manually created in the namespace.
