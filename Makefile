@@ -43,7 +43,7 @@ ifndef GOPATH
 endif
 
 PATH := $(GOPATH)/bin:$(PATH)
-SHELL := env PATH=$(PATH) $(SHELL)
+#SHELL := env PATH=$(PATH) $(SHELL)
 
 default: local
 
@@ -51,7 +51,7 @@ clean:
 	rm -rf build scm-source.json
 
 local: ${SOURCES}
-	hack/verify-codegen.sh
+	GOPATH=${GOPATH} hack/verify-codegen.sh
 	CGO_ENABLED=${CGO_ENABLED} go build -o build/${BINARY} $(LOCAL_BUILD_FLAGS) -ldflags "$(LDFLAGS)" $^
 
 linux: ${SOURCES}
@@ -100,8 +100,11 @@ deps: tools
 	GO111MODULE=on go mod vendor
 
 test:
-	hack/verify-codegen.sh
+	GOPATH=${GOPATH} hack/verify-codegen.sh
 	GO111MODULE=on go test ./...
 
 e2e: docker # build operator image to be tested
 	cd e2e; make e2etest
+
+helm:
+	cd charts/postgres-operator && helm package . && helm repo index .
