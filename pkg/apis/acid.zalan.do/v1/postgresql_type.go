@@ -140,8 +140,9 @@ type PostgresqlParam struct {
 
 // PgParameterAttr defines postgres parameter attributes
 type PgParameterAttr struct {
-	Type  string `json:"type,omitempty"`
-	Value string `json:"value,omitempty"`
+	Type      string           `json:"type,omitempty"`
+	Value     string           `json:"value,omitempty"`
+	ValueFrom *v1.EnvVarSource `json:"valueFrom,omitempty"`
 }
 
 // ResourceDescription describes CPU and memory resources defined for a cluster.

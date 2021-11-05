@@ -381,6 +381,17 @@ spec:
                             - "bootstrap"
                         value:
                           type: string
+                        valueFrom:
+                          type: object
+                          properties:
+                            configMapKeyRef:
+                              type: object
+                              additionalProperties:
+                                type: string
+                            secretKeyRef:
+                              type: object
+                              additionalProperties:
+                                type: string
               preparedDatabases:
                 type: object
                 additionalProperties:

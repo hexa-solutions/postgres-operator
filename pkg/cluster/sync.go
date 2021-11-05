@@ -505,10 +505,19 @@ func (c *Cluster) checkAndSetGlobalPostgreSQLConfiguration(pod *v1.Pod, patroniC
 
 	// compare parameters under postgresql section with c.Spec.Postgresql.Parameters from manifest
 	desiredPgParameters := c.Spec.Parameters
-	for desiredParameterName, desiredParameterAttr := range desiredPgParameters {
-		effectiveValue := effectivePgParameters[desiredParameterName]
-		if desiredParameterAttr.Type == constants.PatroniBootstrapPGParameterName && (effectiveValue != desiredParameterAttr.Value) {
-			parametersToSet[desiredParameterName] = desiredParameterAttr.Value
+	for desiredName, desiredAttr := range desiredPgParameters {
+		if desiredAttr.Type == constants.PatroniBootstrapPGParameterName {
+			effectiveValue := effectivePgParameters[desiredName]
+
+			desiredValue, err := c.GetPostgresParamValue(desiredAttr)
+			if err != nil {
+				c.logger.Errorf("error while getting global parameter %s: %v", desiredName, err)
+				continue
+			}
+
+			if effectiveValue != desiredValue {
+				parametersToSet[desiredName] = desiredValue
+			}
 		}
 	}
 
