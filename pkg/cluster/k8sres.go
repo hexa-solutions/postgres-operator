@@ -266,10 +266,10 @@ func (c *Cluster) getLocalAndBoostrapPostgreSQLParameters(parameters map[string]
 		switch paramAttr.Type {
 		default:
 			fallthrough
-		case constants.PatroniLocalPGParameterName:
-			local[paramName] = paramValue
 		case constants.PatroniBootstrapPGParameterName:
 			bootstrap[paramName] = paramValue
+		case constants.PatroniLocalPGParameterName:
+			local[paramName] = paramValue
 		}
 	}
 
